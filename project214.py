@@ -26,8 +26,8 @@ gme_data.reset_index(inplace=True)
 gme_data.head()
 gme_data.reset_index(inplace=True)
 gme_data.tail()
-stock_data = yf.download("TSLA", start="2020-01-01", end="2021-09-30", progress=False)
-revenue_data = yf.download("TSLA", start="2020-01-01", end="2021-09-30", progress=False)
+stock_data = yf.download("TSLA", start="2012-01-01", end="2021-09-30", progress=False)
+revenue_data = yf.download("TSLA", start="2012-01-01", end="2021-09-30", progress=False)
 stock_data.reset_index(inplace=True)
 revenue_data.reset_index(inplace=True)
 
@@ -62,8 +62,8 @@ def make_graph(stock_data, revenue_data, stock):
     
 make_graph(stock_data, revenue_data, 'TSLA')
 
-stock_data = yf.download("TSLA", start="2020-01-01", end="2021-09-30", progress=False)
-revenue_data = yf.download("TSLA", start="2020-01-01", end="2021-09-30", progress=False)
+stock_data = yf.download("TSLA", start="2012-01-01", end="2021-09-30", progress=False)
+revenue_data = yf.download("TSLA", start="2012-01-01", end="2021-09-30", progress=False)
 stock_data.reset_index(inplace=True)
 revenue_data.reset_index(inplace=True)
 
